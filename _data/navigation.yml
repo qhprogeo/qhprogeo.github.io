@@ -1,8 +1,12 @@
 main:
-  - title: "Blogs"
-    url: /blogs/
   - title: "Publications"
     url: /publications/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Blogs"
+    url: /blogs/
+  - title: "Problems"
+    url: /problems/
   - title: "Tags"
     url: /tags/
   - title: "About"
