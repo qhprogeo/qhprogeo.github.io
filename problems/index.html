@@ -42,6 +42,8 @@
 
 
 
+  <link rel="next" href="/problems/problems/2/">
+
 
 
 
@@ -75,7 +77,14 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" crossorigin="anonymous"></script>
 <!-- To automatically render math in text elements, include the auto-render extension: -->
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+    onload='renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: true},
+            {left: "\\[", right: "\\]", display: true}
+        ]
+        });'></script>
 
   </head>
 
@@ -178,31 +187,6 @@
 
 
 
-
-  
-    
-
-
-
-<nav class="breadcrumbs">
-  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
-
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        <li class="current">Problems</li>
-      
-    
-  </ol>
-</nav>
 
   
 
@@ -326,7 +310,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="/problems/" itemprop="url">Problems
+            <a href="/problems/index.html" itemprop="url">Problems
 </a>
           </h1>
           
@@ -356,42 +340,91 @@
     <th>Problem</th>
     <th>Solution</th>
   </tr>
-  <tr>
-    <td>
-      <strong>Problem 12357 - 04 - Contest A</strong><br />
-      <img src="/assets/problems/12501.gif" alt="Problem 12357 - 04 - Contest A" />
-    </td>
-    <td><a href="path/to/solution1.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12358 - 04 - Contest B</strong><br />
-      \( \frac{d}{dx} (e^x) \)
-    </td>
-    <td><a href="path/to/solution2.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12359 - 04 - Contest C</strong><br />
-      \( \lim_ \frac{\sin x}{x} \)
-    </td>
-    <td><a href="path/to/solution3.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12360 - 04 - Contest D</strong><br />
-      \( \sum_^{\infty} \frac{1}{n^2} \)
-    </td>
-    <td><a href="path/to/solution4.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12361 - 04 - Contest E</strong><br />
-      \( \int \frac{1}{x} \, dx \)
-    </td>
-    <td><a href="path/to/solution5.pdf">Solution</a></td>
-  </tr>
+  
+    <tr class="problem-block">
+      <td><b>Contest X, Problem 1</b> <p><p>Given the function $f(x) = \int_{0}^{x} \frac{1}{1 + t^2} \, dt$, find the value of $f’(x)$ and evaluate $f(\pi)$.</p>
+
+<p>Additionally, consider the series $S = \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$. Determine whether the series converges or diverges. If it converges, find its sum.</p>
+
+<p>Finally, solve the following differential equation:
+$\frac{d^2y}{dx^2} + 4\frac{dy}{dx} + 4y = 0$
+with the initial conditions $y(0) = 1$ and $y’(0) = 0$.</p>
+<p></td>
+      <td><a href="https://google.com">Solution</a></td>
+    </tr>
+  
+    <tr class="problem-block">
+      <td><b>Contest X, Problem 2</b> <p><p>Prove that the sum of the interior angles of a triangle is $180^\circ$.</p>
+
+<p>Consider a triangle $ABC$. Extend the side $BC$ to a point $D$. Let $\angle BAC = \alpha$, $\angle ABC = \beta$, and $\angle ACB = \gamma$.</p>
+
+<p>By the exterior angle theorem, the exterior angle $\angle ACD$ is equal to the sum of the two opposite interior angles, $\alpha$ and $\beta$. Therefore, $\angle ACD = \alpha + \beta$.</p>
+
+<p>Since $\angle ACD$ and $\angle ACB$ form a linear pair, their sum is $180^\circ$. Thus, we have:
+\(\alpha + \beta + \gamma = 180^\circ\)</p>
+
+<p>Hence, the sum of the interior angles of a triangle is $180^\circ$.</p>
+<p></td>
+      <td><a href="https://google.com">Solution</a></td>
+    </tr>
+  
+
 </table>
+
+<!-- <div class="pagination">
+  
+
+  
+    <a href="/problems/problems/2/">Next &raquo;</a>
+  
+</div> -->
+
+
+  
+    <nav class="pagination">
+  <ul>
+    
+    
+      <li><a href="#" class="disabled"><span aria-hidden="true">Previous</span></a></li>
+    
+
+    
+    
+
+    
+    
+      
+        <li><a href="#" class="disabled current">1</a></li>
+      
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+        <li><a href="/problems/problems/2/">2</a></li>
+      
+    
+
+    
+    
+      <li><a href="/problems/problems/2/">Next</a></li>
+    
+  </ul>
+</nav>
+
+  
+
+
 
         
       </section>

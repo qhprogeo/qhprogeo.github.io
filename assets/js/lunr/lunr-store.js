@@ -40,4 +40,22 @@ var store = [{
         "tags": ["Jekyll","update"],
         "url": "/blogs/welcome-to-jekyll/",
         "teaser": null
+      },{
+        "title": "12357",
+        "excerpt":"Given the function $f(x) = \\int_{0}^{x} \\frac{1}{1 + t^2} \\, dt$, find the value of $f’(x)$ and evaluate $f(\\pi)$. Additionally, consider the series $S = \\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{n}$. Determine whether the series converges or diverges. If it converges, find its sum. Finally, solve the following differential equation: $\\frac{d^2y}{dx^2} + 4\\frac{dy}{dx} +...","categories": [],
+        "tags": [],
+        "url": "/problems/12357.html",
+        "teaser": null
+      },{
+        "title": "12358",
+        "excerpt":"Prove that the sum of the interior angles of a triangle is $180^\\circ$. Consider a triangle $ABC$. Extend the side $BC$ to a point $D$. Let $\\angle BAC = \\alpha$, $\\angle ABC = \\beta$, and $\\angle ACB = \\gamma$. By the exterior angle theorem, the exterior angle $\\angle ACD$ is...","categories": [],
+        "tags": [],
+        "url": "/problems/12358.html",
+        "teaser": null
+      },{
+        "title": "12359",
+        "excerpt":"Consider the function $f: \\mathbb{R} \\to \\mathbb{R}$ that satisfies the following functional equation for all real numbers $x$ and $y$: \\[f(x + y) + f(x - y) = 2f(x)f(y)\\] Additionally, it is given that $f(0) = 1$. Prove that $f$ is an even function, i.e., $f(x) = f(-x)$ for all...","categories": [],
+        "tags": [],
+        "url": "/problems/12359.html",
+        "teaser": null
       }]
