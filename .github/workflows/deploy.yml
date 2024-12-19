@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read  # Ensure the token has read permissions
+      contents: write  # Ensure the token has read permissions
       pages: write     # Add this line to ensure the token can deploy to GitHub Pages
       id-token: write  # Add this line if you need to use OIDC for authentication
 
