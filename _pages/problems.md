@@ -7,7 +7,7 @@ pagination:
   enabled: true
   collection: problems
   per_page: 2
-  permalink: '/problems/:num/'
+  permalink: '/_:num/'
 ---
 
 <style>
@@ -35,7 +35,6 @@ pagination:
       <td><a href="{{ problem.solution_link }}">Solution</a></td>
     </tr>
   {% endfor %}
-
 </table>
 
 <!-- <div class="pagination">

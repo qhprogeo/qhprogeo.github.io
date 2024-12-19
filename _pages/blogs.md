@@ -1,11 +1,11 @@
 ---
 title: "Blogs"
-layout: home
+layout: blogs
 author_profile: true
 permalink: /blogs/
 pagination:
   enabled: true
-  per_page: 10
-  permalink: '/blogs/:num/'
+  per_page: 5
+  permalink: '/_:num/'
   collection: posts
 ---

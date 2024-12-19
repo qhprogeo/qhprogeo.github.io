@@ -10,8 +10,6 @@ theme: minimal-mistakes-jekyll
 search: true
 markdown: kramdown
 breadcrumbs: true
-# paginate: 5
-# paginate_path: /page/:num/
 
 sass:
   sass_dir: _sass
@@ -76,6 +74,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+pagination:
+  enabled: true
 
 collections:
   - problems
