@@ -77,9 +77,5 @@ defaults:
       layout: single
       author_profile: true
 
-pagination:
-  enabled: true
-  collection: problems
-
 collections:
   - problems
