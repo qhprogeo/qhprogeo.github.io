@@ -77,6 +77,12 @@ defaults:
 
 pagination:
   enabled: true
+  title: ':title - page :num'
 
 collections:
   - problems
+
+comments:
+  provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  disqus:
+    shortname: qhprogeo # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
