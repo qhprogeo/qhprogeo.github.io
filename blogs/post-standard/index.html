@@ -688,7 +688,8 @@ Link
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/blogs/post-standard/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.url = window.location.origin + window.location.pathname;  /* Replace PAGE_URL with your page's canonical URL variable */
+      // this.page.url = "/blogs/post-standard/";
       this.page.identifier = "/blogs/post-standard"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
