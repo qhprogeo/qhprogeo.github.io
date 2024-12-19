@@ -9,7 +9,8 @@ theme: minimal-mistakes-jekyll
 # minimal_mistakes_skin: _sunrise
 search: true
 markdown: kramdown
-permalink: /:categories/:title/
+# permalink: /blogs/:title/
+breadcrumbs: true
 paginate: 10
 paginate_path: /page:num/
 
@@ -67,6 +68,7 @@ defaults:
       comments: true
       share: true
       related: true
+      permalink: /blogs/:title/
 
   - scope:
       path: "_pages"

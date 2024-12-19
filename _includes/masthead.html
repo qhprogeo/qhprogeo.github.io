@@ -44,7 +44,8 @@
     const navLinks = document.querySelectorAll('#site-nav a');
 
     navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentUrl) {
+      const linkUrl = link.getAttribute('href');
+      if (linkUrl === '/' && currentUrl === '/' || (linkUrl !== '/' && currentUrl.startsWith(linkUrl))) {
         link.classList.add('active');
       }
     });
