@@ -1,10 +1,11 @@
 
-title: Tran Quang Hung
+title: Quang Hung Tran
 email:
 description: >-
   Tran Quang Hung's academic homepage and blog.
 
 theme: minimal-mistakes-jekyll
+
 minimal_mistake_skin: dirt
 search: true
 markdown: kramdown
