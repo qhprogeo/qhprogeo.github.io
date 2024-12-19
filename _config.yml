@@ -6,7 +6,7 @@ description: >-
 
 theme: minimal-mistakes-jekyll
 
-minimal_mistake_skin: dirt
+minimal_mistakes_skin: _dirt
 search: true
 markdown: kramdown
 permalink: /:title/
