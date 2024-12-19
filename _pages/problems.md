@@ -1,8 +1,13 @@
 ---
 title: "Problems"
 layout: single
-permalink: /problems/
 author_profile: true
+permalink: /problems/
+pagination:
+  enabled: true
+  collection: problems
+  per_page: 2
+  permalink: '/problems/:num/'
 ---
 
 <style>
@@ -24,39 +29,23 @@ author_profile: true
     <th>Problem</th>
     <th>Solution</th>
   </tr>
-  <tr>
-    <td>
-      <strong>Problem 12357 - 04 - Contest A</strong><br>
-      <img src="/assets/problems/12501.gif" alt="Problem 12357 - 04 - Contest A">
-    </td>
-    <td><a href="path/to/solution1.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12358 - 04 - Contest B</strong><br>
-      \( \frac{d}{dx} (e^x) \)
-    </td>
-    <td><a href="path/to/solution2.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12359 - 04 - Contest C</strong><br>
-      \( \lim_{{x \to 0}} \frac{\sin x}{x} \)
-    </td>
-    <td><a href="path/to/solution3.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12360 - 04 - Contest D</strong><br>
-      \( \sum_{{n=1}}^{\infty} \frac{1}{n^2} \)
-    </td>
-    <td><a href="path/to/solution4.pdf">Solution</a></td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Problem 12361 - 04 - Contest E</strong><br>
-      \( \int \frac{1}{x} \, dx \)
-    </td>
-    <td><a href="path/to/solution5.pdf">Solution</a></td>
-  </tr>
+  {% for problem in paginator.posts %}
+    <tr class="problem-block">
+      <td><b>{{ problem.problem_title }}</b> <p>{{ problem.content }}<p></td>
+      <td><a href="{{ problem.solution_link }}">Solution</a></td>
+    </tr>
+  {% endfor %}
+
 </table>
+
+<!-- <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">&laquo; Previous</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">Next &raquo;</a>
+  {% endif %}
+</div> -->
+
+{% include paginator.html %}

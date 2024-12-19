@@ -9,10 +9,9 @@ theme: minimal-mistakes-jekyll
 # minimal_mistakes_skin: _sunrise
 search: true
 markdown: kramdown
-# permalink: /blogs/:title/
 breadcrumbs: true
-paginate: 10
-paginate_path: /page:num/
+# paginate: 5
+# paginate_path: /page/:num/
 
 sass:
   sass_dir: _sass
@@ -36,6 +35,7 @@ plugins:
   - jekyll-gist
   - jemoji
   - jekyll-include-cache
+  - jekyll-paginate-v2
 
 author:
   name: "Tran Quang Hung"
@@ -76,3 +76,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+pagination:
+  enabled: true
+  collection: problems
+
+collections:
+  - problems
