@@ -24,7 +24,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quang Hung Tran">
 <meta property="og:title" content="Post: Standard">
-<meta property="og:url" content="/blog/post-standard/">
+<meta property="og:url" content="/blogs/post-standard/">
 
 
   <meta property="og:description" content="All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, “Oh, why can’t you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.  Mrs. Darling first heard of Peter when she was tidying up her children’s minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.">
@@ -42,7 +42,7 @@
 
 
 
-<link rel="canonical" href="/blog/post-standard/">
+<link rel="canonical" href="/blogs/post-standard/">
 
 
 
@@ -168,7 +168,8 @@
     const navLinks = document.querySelectorAll('#site-nav a');
 
     navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentUrl) {
+      const linkUrl = link.getAttribute('href');
+      if (linkUrl === '/' && currentUrl === '/' || (linkUrl !== '/' && currentUrl.startsWith(linkUrl))) {
         link.classList.add('active');
       }
     });
@@ -181,6 +182,43 @@
 
 
 
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/blogs" itemprop="item"><span itemprop="name">Blogs</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Post: Standard</li>
+      
+    
+  </ol>
+</nav>
+
+  
 
 
 <div id="main" role="main">
@@ -302,7 +340,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="/blog/post-standard/" itemprop="url">Post: Standard
+            <a href="/blogs/post-standard/" itemprop="url">Post: Standard
 </a>
           </h1>
           
@@ -369,22 +407,22 @@
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Post%3A+Standard%20%2Fblog%2Fpost-standard%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Post%3A+Standard%20%2Fblogs%2Fpost-standard%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fblog%2Fpost-standard%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fblogs%2Fpost-standard%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/blog/post-standard/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/blogs/post-standard/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/blog/post-modified/" class="pagination--pager" title="Post: Modified Date
+      <a href="/blogs/post-modified/" class="pagination--pager" title="Post: Modified Date
 ">Previous</a>
     
     
-      <a href="/blog/post-chat/" class="pagination--pager" title="Post: Chat
+      <a href="/blogs/post-chat/" class="pagination--pager" title="Post: Chat
 ">Next</a>
     
   </nav>
@@ -412,7 +450,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/welcome-to-jekyll/" rel="permalink">Blog cua Hung
+        <a href="/blogs/welcome-to-jekyll/" rel="permalink">Blog cua Hung
 </a>
       
     </h2>
@@ -455,7 +493,7 @@ Link
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="https://github.com">Post: Link
-</a> <a href="/blog/post-link/" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+</a> <a href="/blogs/post-link/" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       
     </h2>
     
@@ -495,7 +533,7 @@ Link
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/post-quote/" rel="permalink">Post: Quote
+        <a href="/blogs/post-quote/" rel="permalink">Post: Quote
 </a>
       
     </h2>
@@ -542,7 +580,7 @@ Link
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/post-notice/" rel="permalink">Post: Notice
+        <a href="/blogs/post-notice/" rel="permalink">Post: Notice
 </a>
       
     </h2>

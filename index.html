@@ -174,7 +174,8 @@
     const navLinks = document.querySelectorAll('#site-nav a');
 
     navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentUrl) {
+      const linkUrl = link.getAttribute('href');
+      if (linkUrl === '/' && currentUrl === '/' || (linkUrl !== '/' && currentUrl.startsWith(linkUrl))) {
         link.classList.add('active');
       }
     });
@@ -318,7 +319,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/welcome-to-jekyll/" rel="permalink">Blog cua Hung
+        <a href="/blogs/welcome-to-jekyll/" rel="permalink">Blog cua Hung
 </a>
       
     </h2>
@@ -360,7 +361,7 @@ Link
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="https://github.com">Post: Link
-</a> <a href="/blog/post-link/" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+</a> <a href="/blogs/post-link/" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       
     </h2>
     
@@ -399,7 +400,7 @@ Link
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/post-quote/" rel="permalink">Post: Quote
+        <a href="/blogs/post-quote/" rel="permalink">Post: Quote
 </a>
       
     </h2>
@@ -445,7 +446,7 @@ Link
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/post-notice/" rel="permalink">Post: Notice
+        <a href="/blogs/post-notice/" rel="permalink">Post: Notice
 </a>
       
     </h2>
@@ -485,7 +486,7 @@ Link
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/post-chat/" rel="permalink">Post: Chat
+        <a href="/blogs/post-chat/" rel="permalink">Post: Chat
 </a>
       
     </h2>
@@ -525,7 +526,7 @@ Link
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/post-standard/" rel="permalink">Post: Standard
+        <a href="/blogs/post-standard/" rel="permalink">Post: Standard
 </a>
       
     </h2>
@@ -564,7 +565,7 @@ Link
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/post-modified/" rel="permalink">Post: Modified Date
+        <a href="/blogs/post-modified/" rel="permalink">Post: Modified Date
 </a>
       
     </h2>

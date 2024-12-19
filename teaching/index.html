@@ -164,7 +164,8 @@
     const navLinks = document.querySelectorAll('#site-nav a');
 
     navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentUrl) {
+      const linkUrl = link.getAttribute('href');
+      if (linkUrl === '/' && currentUrl === '/' || (linkUrl !== '/' && currentUrl.startsWith(linkUrl))) {
         link.classList.add('active');
       }
     });
@@ -177,6 +178,33 @@
 
 
 
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Teaching</li>
+      
+    
+  </ol>
+</nav>
+
+  
 
 
 <div id="main" role="main">
