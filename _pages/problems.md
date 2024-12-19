@@ -6,7 +6,7 @@ permalink: /problems/
 pagination:
   enabled: true
   collection: problems
-  per_page: 2
+  per_page: 100
   permalink: '/problems/:num/'
 ---
 
