@@ -32,7 +32,7 @@ pagination:
   }
 </style>
 
-<table>
+<table style="overflow-x: initial;">
   <tr>
     <th>Problem</th>
     <th>Solution</th>
@@ -44,6 +44,14 @@ pagination:
     </tr>
   {% endfor %}
 </table>
+<!--
+  {% for problem in paginator.posts %}
+    <div class="problem-block">
+      <b>{{ problem.title }}</b>
+      <p>{{ problem.content }}<p>
+      <a href="{{ problem.solution_link }}">Solution</a>
+    </div>
+  {% endfor %} -->
 
 <!-- <div class="pagination">
   {% if paginator.previous_page %}

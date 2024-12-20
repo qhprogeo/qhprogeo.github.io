@@ -1,0 +1,53 @@
+---
+layout: archive
+---
+
+<style>
+  .gallery {
+    column-count: 3;
+    column-gap: 1em;
+  }
+  .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 1em;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .gallery-item .date {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #555;
+  }
+</style>
+
+<div class="gallery" id="gallery"></div>
+
+<script>
+  const images = [
+    { url: 'https://via.placeholder.com/300', date: '2023-01-01' },
+    { url: 'https://via.placeholder.com/300', date: '2023-01-02' },
+    { url: 'https://via.placeholder.com/300', date: '2023-01-03' },
+  ];
+
+  const gallery = document.getElementById('gallery');
+
+  images.forEach(image => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+
+    const img = document.createElement('img');
+    img.src = image.url;
+    item.appendChild(img);
+
+    const date = document.createElement('div');
+    date.className = 'date';
+    date.textContent = image.date;
+    item.appendChild(date);
+
+    gallery.appendChild(item);
+  });
+</script>

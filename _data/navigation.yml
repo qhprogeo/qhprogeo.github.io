@@ -11,5 +11,9 @@ main:
     url: /problems/
   - title: "Tags"
     url: /tags/
+  - title: "Gallery"
+    url: /gallery/
+  - title: "Links"
+    url: /links/
   - title: "About"
     url: /about/
