@@ -5,10 +5,18 @@ author_profile: true
 permalink: /problems/
 pagination:
   enabled: true
-  collection: problems
-  per_page: 2
+  collection: posts
+  category: problems
+  per_page: 7
   permalink: '/_:num/'
 ---
+
+<!-- {% for problem in site.categories.problems %}
+<div class="problem-block">
+  <div><b>{{ problem.title }}</b> <p>{{ problem.content }}<p></div>
+  <div><a href="{{ problem.solution_link }}">Solution</a></div>
+</div>
+{% endfor %} -->
 
 <style>
   table {
@@ -31,7 +39,7 @@ pagination:
   </tr>
   {% for problem in paginator.posts %}
     <tr class="problem-block">
-      <td><b>{{ problem.problem_title }}</b> <p>{{ problem.content }}<p></td>
+      <td><b>{{ problem.title }}</b> <p>{{ problem.content }}<p></td>
       <td><a href="{{ problem.solution_link }}">Solution</a></td>
     </tr>
   {% endfor %}

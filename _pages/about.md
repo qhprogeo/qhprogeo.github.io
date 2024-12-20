@@ -2,9 +2,6 @@
 permalink: /about/
 title: "About"
 ---
+QUANG HUNG TRAN [[ORCID 0000-0003-2468-4972](https://orcid.org/0000-0003-2468-4972)] received a bachelor of science degree in pure mathematics in 2008 and a master’s degree in pure mathematics in 2011 from the Vietnam National University. He is a geometry teacher at the High School for Gifted Students (HSGS) of the Vietnam National University. His main interests include several branches of geometry, such as the history of Euclidean geometry, non-Euclidean geometry, multidimensional Euclidean geometry, analytic geometry, and projective geometry. When not teaching and doing mathematics, he enjoys reading and spending time with his family.
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
-
-{% include math-quote.html %}
+<!-- {% include math-quote.html %} -->

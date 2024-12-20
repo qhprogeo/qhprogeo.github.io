@@ -4,12 +4,32 @@ email:
 description: >-
   Tran Quang Hung's academic homepage and blog.
 
+author:
+  name: "Quang Hung Tran"
+  avatar: "/assets/images/avatar.jpg"
+  bio: ""
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://qhp.github.io"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://qh-ghp.github.io"
+
+footer:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://tranquanghung.me"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://qh-ghp.github.io"
+
 theme: minimal-mistakes-jekyll
 
 # minimal_mistakes_skin: _sunrise
 search: true
 markdown: kramdown
-breadcrumbs: true
+# breadcrumbs: true
 
 sass:
   sass_dir: _sass
@@ -27,6 +47,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+plugins_dir: _plugins
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -34,30 +56,12 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-paginate-v2
-
-author:
-  name: "Tran Quang Hung"
-  avatar: "/assets/images/avatar.jpg"
-  bio: ""
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://tranquanghung.me"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://qh-ghp.github.io"
-
-footer:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://tranquanghung.me"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://qh-ghp.github.io"
+  - jekyll-archives
+  # - exclude_categories
 
 defaults:
   - scope:
-      path: ""
+      path: "blogs"
       type: posts
     values:
       layout: single
@@ -69,6 +73,18 @@ defaults:
       permalink: /blogs/:title/
 
   - scope:
+      path: "problems"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      # permalink: /problems/:title/
+
+  - scope:
       path: "_pages"
       type: pages
     values:
@@ -78,11 +94,28 @@ defaults:
 pagination:
   enabled: true
   title: ':title - page :num'
+  categories:
+    enabled: true
 
-collections:
-  - problems
+# collections:
+#   - problems
 
 comments:
   provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname: qhprogeo # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+
+# tag_archive:
+#   type: liquid
+#   path: /tags/
+
+jekyll-archives:
+  enabled:
+    # - categories
+    - tags
+  layouts:
+    # category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    # category: /categories/:name/
+    tag: /tags/:name/

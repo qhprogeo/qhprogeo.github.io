@@ -1,0 +1,16 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% include posts-taxonomy.html taxonomies=site.tags %}
+<!-- <div>
+{% for tag in site.tags %}
+  <span style="margin-right: 18px; background: #f1f1f1; padding: 4px 8px; border-radius: 4px;">
+    <a href="{{ site.baseurl }}/tags/{{ tag[0] | slugify }}">
+      {{ tag[0] }} ({{ tag[1].size }})
+    </a>
+  </span>
+{% endfor %}
+</div> -->

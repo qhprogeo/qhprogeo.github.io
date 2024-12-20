@@ -5,7 +5,8 @@ author_profile: true
 permalink: /blogs/
 pagination:
   enabled: true
+  collection: posts
+  category: blogs
   per_page: 5
   permalink: '/_:num/'
-  collection: posts
 ---
