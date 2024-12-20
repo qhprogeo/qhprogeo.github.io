@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>hard - Quang Hung Tran</title>
+<!-- begin _includes/seo.html --><title>Gallery - Quang Hung Tran</title>
 <meta name="description" content="Tran Quang Hung’s academic homepage and blog.">
 
 
@@ -21,8 +21,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Quang Hung Tran">
-<meta property="og:title" content="hard">
-<meta property="og:url" content="/tags/hard/">
+<meta property="og:title" content="Gallery">
+<meta property="og:url" content="/gallery/">
 
 
   <meta property="og:description" content="Tran Quang Hung’s academic homepage and blog.">
@@ -38,7 +38,7 @@
 
 
 
-<link rel="canonical" href="/tags/hard/">
+<link rel="canonical" href="/gallery/">
 
 
 
@@ -86,7 +86,7 @@
 
   </head>
 
-  <body class="layout--archive-taxonomy">
+  <body class="layout--gallery">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -144,6 +144,18 @@
                 >Tags</a>
               </li><li class="masthead__menu-item">
                 <a
+                  href="/gallery/"
+                  
+                  
+                >Gallery</a>
+              </li><li class="masthead__menu-item">
+                <a
+                  href="/links/"
+                  
+                  
+                >Links</a>
+              </li><li class="masthead__menu-item">
+                <a
                   href="/about/"
                   
                   
@@ -187,53 +199,163 @@
 
 <div id="main" role="main">
   
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="/">
+        <img src="/assets/images/avatar.jpg" alt="Quang Hung Tran" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="/" itemprop="url">Quang Hung Tran</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://qhp.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
 
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">hard</h1>
+      <h1 id="page-title" class="page__title">Gallery</h1>
     
-    
-      
+    <style>
+  .gallery {
+    column-count: 3;
+    column-gap: 1em;
+  }
+  .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 1em;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .gallery-item .date {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #555;
+  }
+</style>
 
+<div class="gallery" id="gallery"></div>
 
+<script>
+  const images = [
+    { url: 'https://via.placeholder.com/300', date: '2023-01-01' },
+    { url: 'https://via.placeholder.com/300', date: '2023-01-02' },
+    { url: 'https://via.placeholder.com/300', date: '2023-01-03' },
+  ];
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/problems/2010/01/07/12357.html" rel="permalink">Contest X, Problem 1
-</a>
-      
-    </h2>
-    
+  const gallery = document.getElementById('gallery');
 
-  <p class="page__meta">
-    
+  images.forEach(image => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
 
-    
+    const img = document.createElement('img');
+    img.src = image.url;
+    item.appendChild(img);
 
-    
-      
-      
+    const date = document.createElement('div');
+    date.className = 'date';
+    date.textContent = image.date;
+    item.appendChild(date);
 
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
+    gallery.appendChild(item);
+  });
+</script>
 
-
-    <p class="archive__item-excerpt" itemprop="description">Given the function $f(x) = \int_{0}^{x} \frac{1}{1 + t^2} \, dt$, find the value of $f’(x)$ and evaluate $f(\pi)$.
-</p>
-  </article>
-</div>
-
-    
   </div>
 </div>
 
