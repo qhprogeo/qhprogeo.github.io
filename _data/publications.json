@@ -1,50 +1,317 @@
 [
   {
-    "title": "Title of the Publication",
-    "authors": "Author Name",
+    "title": "A Generalization of de Gua’s Theorem with a Vector Proof",
+    "authors": "Quang Hung Tran",
     "year": 2023,
-    "journal": "Journal Name",
-    "downloadLink": "#",
-    "doiLink": "https://doi.org/10.1234/example2"
+    "journal": "The Mathematical Intelligencer",
+    "doiLink": "https://doi.org/10.1007/s00283-023-10288-0"
   },
   {
-    "title": "Another Publication Title",
-    "authors": "Author Name",
+    "title": "On the Radical Center of Four Spheres",
+    "authors": "Blas Herrera, Quang Hung Tran",
     "year": 2023,
-    "journal": "Conference Name",
-    "downloadLink": "#",
-    "doiLink": "https://doi.org/10.1234/example2"
+    "journal": "Resonance, Vol. 28, No. 2, pp. 134-140",
+    "doiLink": "https://doi.org/10.1007/s12045-023-1643-z"
   },
   {
-    "title": "Yet Another Publication Title",
-    "authors": "Author Name",
+    "title": "A Generalization of Euler’s Quadrilateral Theorem and Some Applications",
+    "authors": "Quang Hung Tran",
+    "year": 2023,
+    "journal": "Resonance, Vol. 28, No. 3, pp. 200-205",
+    "doiLink": "https://doi.org/10.1007/s12045-023-1643-z"
+  },
+  {
+    "title": "Another Simple Proof of Pascal’s Theorem",
+    "authors": "Quang Hung Tran",
+    "year": 2023,
+    "journal": "Mathematics Magazine, Vol. 96, No. 3, pp. 180-182",
+    "doiLink": "https://doi.org/10.1080/0025570X.2023.2199678"
+  },
+  {
+    "title": "$n$-Dimensional Generalizations of a Thébault Conjecture",
+    "authors": "Quang Hung Tran, Blas Herrera",
+    "year": 2024,
+    "journal": "Mathematical Notes, Vol. 116, No. 1, pp. 45-50",
+    "doiLink": "https://doi.org/10.1134/S0001434624030337"
+  },
+  {
+    "title": "The asymmetric propeller with squares, and some extensions",
+    "authors": "Quang Hung Tran",
+    "year": 2023,
+    "journal": "The Mathematical Gazette, Vol. 107, No. 569, pp. 92-94",
+    "doiLink": "https://doi.org/10.1017/mag.2024.69"
+  },
+  {
+    "title": "Extensions of Vittas’ Theorem",
+    "authors": "Nikolaos Dergiades, Quang Hung Tran",
+    "year": 2023,
+    "journal": "The Mathematical Gazette, Vol. 107, No. 569, pp. 85-88",
+    "doiLink": "https://doi.org/10.1017/mag.2024.9"
+  },
+  {
+    "title": "Some generalisations and extensions of a remarkable geometry puzzle",
+    "authors": "Quang Hung Tran",
+    "year": 2023,
+    "journal": "The Mathematical Gazette, Vol. 107, No. 568, pp. 65-70",
+    "doiLink": "https://doi.org/10.1017/mag.2024.6"
+  },
+  {
+    "title": "Some generalisations of Weitzenböck’s inequality",
+    "authors": "Quang Hung Tran",
+    "year": 2023,
+    "journal": "The Mathematical Gazette, Vol. 106, No. 567, pp. 45-50",
+    "doiLink": "https://doi.org/10.1017/mag.2023.92"
+  },
+  {
+    "title": "An interesting generator of Archimedean circles",
+    "authors": "Nikolaos Dergiades, Quang Hung Tran",
+    "year": 2023,
+    "journal": "The Mathematical Gazette, Vol. 106, No. 566, pp. 35-40",
+    "doiLink": "https://doi.org/10.1017/mag.2023.27"
+  },
+  {
+    "title": "A synthetic proof of the Morley trisector theorem using congruent and similar triangles",
+    "authors": "Quang Hung Tran",
+    "year": 2024,
+    "journal": "Elemente der Mathematik, Vol. 79, No. 1, pp. 20-25",
+    "doiLink": "https://doi.org/10.4171/em/527"
+  },
+  {
+    "title": "A new refinement of the Garfunkel–Bankoff inequality",
+    "authors": "Quang Hung Tran",
+    "year": 2023,
+    "journal": "Elemente der Mathematik, Vol. 78, No. 4, pp. 200-205",
+    "doiLink": "https://doi.org/10.4171/em/516"
+  },
+  {
+    "title": "An interesting theorem on circumscribed hexagon",
+    "authors": "Nikolaos Dergiades, Tran Quang Hung",
+    "year": 2023,
+    "journal": "Elemente der Mathematik, Vol. 78, No. 2, pp. 90-95",
+    "doiLink": "https://doi.org/10.4171/em/501"
+  },
+  {
+    "title": "Some applications of signed distances in triangles and circles",
+    "authors": "Quang Hung Tran",
     "year": 2022,
-    "journal": "Journal Name",
-    "downloadLink": "#",
-    "doiLink": "https://doi.org/10.1234/example3"
+    "journal": "Beitr Algebra Geom, Vol. 63, No. 3, pp. 134-140",
+    "doiLink": "https://doi.org/10.1007/s13366-022-00658-8"
   },
   {
-    "title": "Interesting Research Paper",
-    "authors": "Author Name",
+    "title": "Another Simple Proof of the Siebeck-Marden Theorem",
+    "authors": "Quang Hung Tran",
     "year": 2022,
-    "journal": "Conference Name",
-    "downloadLink": "#",
-    "doiLink": "https://doi.org/10.1234/example3"
+    "journal": "Resonance, Vol. 27, No. 4, pp. 1247-1252",
+    "doiLink": "https://doi.org/10.1007/s12045-022-1417-z"
   },
   {
-    "title": "Research Paper Title",
-    "authors": "Author Name",
-    "year": 2021,
-    "journal": "Journal Name",
-    "downloadLink": "#",
-    "doiLink": "https://doi.org/10.1234/example3"
+    "title": "A generalization of the Pythagorean theorem via Ptolemy's theorem",
+    "authors": "Quang Hung Tran",
+    "year": 2023,
+    "journal": "Math. Mag., Vol. 96, No. 1, pp. 57-59",
+    "doiLink": "https://doi.org/10.1080/0025570X.2023.2166328"
   },
   {
-    "title": "Another Interesting Paper",
-    "authors": "Author Name",
+    "title": "An interesting generator of Archimedean circles",
+    "authors": "Nikolaos Dergiades, Quang Hung Tran",
+    "year": 2023,
+    "journal": "Math. Gaz., Vol. 107, No. 568, pp. 155-159",
+    "doiLink": "https://doi.org/10.1017/mag.2023.27"
+  },
+  {
+    "title": "The Golden section in the hypercube",
+    "authors": "Quang Hung Tran",
+    "year": 2022,
+    "journal": "Irish Math. Soc. Bull., Vol. 90, pp. 29-32",
+    "doiLink": "https://doi.org/10.33232/bims.0090.29.32"
+  },
+  {
+    "title": "A Napoleon--like theorem for quadrilaterals",
+    "authors": "Quang Hung Tran",
+    "year": 2022,
+    "journal": "Amer. Math. Monthly, Vol. 129, No. 10, pp. 975-978",
+    "doiLink": "https://doi.org/10.1080/00029890.2022.2116247"
+  },
+  {
+    "title": "An analogue of Thébault's theorem linking the radical center of four spheres with the insphere and the Monge point of a tetrahedron",
+    "authors": "Blas Herrera, Quang Hung Tran",
+    "year": 2022,
+    "journal": "Int. Electron. J. Geom., Vol. 15, No. 1, pp. 75-78",
+    "doiLink": "https://doi.org/10.36890/iejg.957190"
+  },
+  {
+    "title": "A new proof of the $n$-dimensional Pythagorean theorem",
+    "authors": "Quang Hung Tran",
+    "year": 2022,
+    "journal": "Math. Gaz., Vol. 106, No. 565, pp. 136-137"
+  },
+  {
+    "title": "A direct proof of Pitot's theorem",
+    "authors": "Quang Hung Tran",
+    "year": 2022,
+    "journal": "Math. Mag., Vol. 95, No. 1, pp. 59-60"
+  },
+  {
+    "title": "Generalizations of Fagnano's Problem",
+    "authors": "Quang Hung Tran",
     "year": 2021,
-    "journal": "Conference Name",
-    "downloadLink": "#",
-    "doiLink": "https://doi.org/10.1234/example3"
+    "journal": "Forum Geom., Vol. 25, No. 1, pp. 061-069"
+  },
+  {
+    "title": "Extending a theorem of van Aubel to the simplex",
+    "authors": "Quang Hung Tran",
+    "year": 2021,
+    "journal": "J. Geom. Graph., Vol. 25, No. 2, pp. 253-263"
+  },
+  {
+    "title": "Morley's trisector theorem for isosceles tetrahedron",
+    "authors": "Quang Hung Tran",
+    "year": 2021,
+    "journal": "Acta Math. Hungar., Vol. 165, pp. 308-315",
+    "doiLink": "https://doi.org/10.1007/s10474-021-01184-0"
+  },
+  {
+    "title": "Another generalization of Musselman's theorems",
+    "authors": "Nguyen Minh Ha, Tran Quang Hung",
+    "year": 2021,
+    "journal": "Glob. J. Adv. Res. Class. Mod. Geom., Vol. 10, No. 2, pp. 128-136"
+  },
+  {
+    "title": "British flag theorem for isosceles trapezia",
+    "authors": "Quang Hung Tran",
+    "year": 2021,
+    "journal": "Math. Gaz., Vol. 105, No. 564, pp. 523-529",
+    "doiLink": "https://doi.org/10.1017/mag.2021.127"
+  },
+  {
+    "title": "A family of weighted Erdös–Mordell inequality and applications",
+    "authors": "Quang Hung Tran",
+    "year": 2021,
+    "journal": "J. Geom., Vol. 112",
+    "doiLink": "https://doi.org/10.1007/s00022-021-00597-0"
+  },
+  {
+    "title": "Some strengthened versions of Klamkin's inequality and applications",
+    "authors": "Quang Hung Tran",
+    "year": 2021,
+    "journal": "Geom. Dedicata, Vol. 213, pp. 467-472",
+    "doiLink": "https://doi.org/10.1007/s10711-021-00603-4"
+  },
+  {
+    "title": "A generalization of Feuerbach's theorem",
+    "authors": "Quang Hung Tran, Nguyen Thi Thuy Duong",
+    "year": 2021,
+    "journal": "Int. J. Geom., Vol. 10, No. 1, pp. 74-78"
+  },
+  {
+    "title": "On some extensions of Morley's trisector theorem",
+    "authors": "Nikos Dergiades, Quang Hung Tran",
+    "year": 2020,
+    "journal": "J. Geom. Graph., Vol. 24, No. 2, pp. 197-205"
+  },
+  {
+    "title": "On concurrence of nine Euler lines on the Morley's configuration",
+    "authors": "Cherng-Tiao Perng, Quang Hung Tran",
+    "year": 2020,
+    "journal": "Glob. J. Adv. Res. Class. Mod. Geom., Vol. 9, No. 2, pp. 127-132"
+  },
+  {
+    "title": "Some new theorems on Pentagon and Pentagram",
+    "authors": "Quang Hung Tran",
+    "year": 2019,
+    "journal": "arXiv preprint",
+    "downloadLink": "https://arxiv.org/abs/1908.00974"
+  },
+  {
+    "title": "Generalization of Ptolemy's theorem",
+    "authors": "Quang Hung Tran",
+    "year": 2019,
+    "journal": "J. Sci. Arts, Vol. 19, No. 2, pp. 275-280"
+  },
+  {
+    "title": "A direct trigonometric proof of Morley’s theorem",
+    "authors": "Quang Hung Tran",
+    "year": 2019,
+    "journal": "Int. J. Geom., Vol. 8, No. 2, October",
+    "downloadLink": "https://ijgeometry.com/wp-content/uploads/2019/09/46-48.pdf"
+  },
+  {
+    "title": "On the automorphism groups of finite multitype models in $\\mathbb{C}^n$",
+    "authors": "Ninh Van Thu, Nguyen Thi Lan Huong, Tran Quang Hung, Hyeseon Kim",
+    "year": 2019,
+    "journal": "J. Geom. Anal., Vol. 29, pp. 428-450",
+    "doiLink": "https://doi.org/10.1007/s12220-018-9999-0"
+  },
+  {
+    "title": "Simple Proofs of Feuerbach's Theorem and Emelyanov's Theorem",
+    "authors": "Nikolaos Dergiades, Tran Quang Hung",
+    "year": 2018,
+    "journal": "Forum Geom., Vol. 18, pp. 353-359"
+  },
+  {
+    "title": "A Construction of the Golden Ratio in an Arbitrary Triangle",
+    "authors": "Tran Quang Hung",
+    "year": 2018,
+    "journal": "Forum Geom., Vol. 18, pp. 239-244"
+  },
+  {
+    "title": "Another simple construction of the golden ratio in an isosceles triangle",
+    "authors": "Tran Quang Hung",
+    "year": 2017,
+    "journal": "Forum Geom., Vol. 17, pp. 287-288"
+  },
+  {
+    "title": "Some extensions of the Droz-Farny line theorem",
+    "authors": "Tran Quang Hung",
+    "year": 2017,
+    "journal": "Journal of Classical Geometry, Vol. 4"
+  },
+  {
+    "title": "Feuerbach’s Theorem on right triangle with an extension",
+    "authors": "Tran Quang Hung",
+    "year": 2017,
+    "journal": "Int. J. Geom., Vol. 6, No. 2, October"
+  },
+  {
+    "title": "A simple synthetic proof of Lemoine's theorem",
+    "authors": "Tran Quang Hung",
+    "year": 2017,
+    "journal": "Forum Geom., Vol. 17, pp. 93-95"
+  },
+  {
+    "title": "Another simple construction of the golden section with equilateral triangles",
+    "authors": "Tran Quang Hung",
+    "year": 2017,
+    "journal": "Forum Geom., Vol. 17, pp. 47-48"
+  },
+  {
+    "title": "Euler line in the golden rectangle",
+    "authors": "Tran Quang Hung",
+    "year": 2016,
+    "journal": "Forum Geom., Vol. 16, pp. 371-372"
+  },
+  {
+    "title": "Another synthetic proof of the butterfly theorem using the midline in triangle",
+    "authors": "Tran Quang Hung",
+    "year": 2015,
+    "journal": "Forum Geom., Vol. 15, pp. 91-92"
+  },
+  {
+    "title": "Two more pairs of Archimedean circles in the arbelos",
+    "authors": "Tran Quang Hung",
+    "year": 2014,
+    "journal": "Forum Geom., Vol. 14, pp. 249-251"
+  },
+  {
+    "title": "Two tangent circles from jigsawing quadrangle",
+    "authors": "Tran Quang Hung",
+    "year": 2014,
+    "journal": "Forum Geom., Vol. 14, pp. 247-248"
+  },
+  {
+    "title": "Generalization of a problem with isogonal conjugate points",
+    "authors": "Tran Quang Hung, Pham Huy Hoang",
+    "year": 2013,
+    "journal": "Journal of Classical Geometry, Vol. 2"
   }
 ]

@@ -1,0 +1,102 @@
+---
+title: "Problems"
+layout: single
+author_profile: true
+permalink: /problems/
+pagination:
+  enabled: true
+  collection: posts
+  category: problems
+  per_page: 7
+  permalink: '/_:num/'
+---
+
+
+<style>
+  .problem-block {
+    border-top: 1px solid #ddd;
+    padding-bottom: 3em;
+    padding-top: 1em;
+  }
+  .problem-block img {
+    max-width: 80%;
+    max-height: 20em;
+   }
+  .katex-display, .MathJax {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+  }
+  .katex-display::-webkit-scrollbar {
+    height: 4px;
+  }
+  .katex-display::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.2);
+  }
+</style>
+
+<div style="display: flex; flex-direction: column; width: 100%;">
+  {% for problem in paginator.posts %}
+    <div class="problem-block" style="width: 100%; ">
+      <b>{{ problem.title }}</b>
+      <p>{{ problem.content }}</p>
+      <a href="{{ problem.solution_link }}">{{ problem.title }} Solution</a>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.problem-block img');
+    images.forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = '1000';
+
+        const wrapper = document.createElement('div');
+        wrapper.style.backgroundColor = 'white';
+        // wrapper.style.padding = '10px';
+        wrapper.style.borderRadius = '5px';
+        wrapper.style.display = 'inline-block';
+        wrapper.style.maxWidth = '90%';
+        wrapper.style.maxHeight = '90%';
+        wrapper.style.boxSizing ='border-box';
+        // wrapper.style.overflow ='auto';
+
+        const modalImg = document.createElement('img');
+        modalImg.src = img.src;
+        modalImg.style.maxWidth = '90vw';
+        modalImg.style.maxHeight = '90vh';
+        modalImg.style.width = 'auto';
+        modalImg.style.height = 'auto';
+
+        wrapper.appendChild(modalImg);
+        modal.appendChild(wrapper);
+        document.body.appendChild(modal);    modal.addEventListener('click', function(event) {
+          if (event.target === modal) {
+            document.body.removeChild(modal);
+          }
+        });
+
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape') {
+            if (document.body.contains(modal)) {
+              document.body.removeChild(modal);
+            }
+          }
+        });
+      });
+    });
+  });
+</script>
+
+{% include paginator.html %}
