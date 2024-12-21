@@ -9,11 +9,11 @@ main:
     url: /blogs/
   - title: "Problems"
     url: /problems/
-  - title: "Tags"
-    url: /tags/
   - title: "Gallery"
     url: /gallery/
   - title: "Links"
     url: /links/
   - title: "About"
     url: /about/
+  - title: "Tags"
+    url: /tags/

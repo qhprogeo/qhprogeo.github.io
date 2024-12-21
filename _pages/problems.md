@@ -33,10 +33,10 @@ pagination:
   td img {
     max-width: 80%;
     max-height: 400px;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     &:hover {
       cursor: pointer;
-      border: 1px dashed #ddd;
+      /* border: 1px dashed #ddd; */
     }
   }
 </style>
