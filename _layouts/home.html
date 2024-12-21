@@ -7,19 +7,44 @@ layout: archive
 {% include math-quote.html %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<ul>
+  {% for post in site.categories.blogs limit:3 %}
+    <li>
+      {{ post.date | date: "%b %d, %Y" }} - <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
+<a href="/blogs/">More Posts</a>
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].selected_publications | default: "Selected Publications" }}</h3>
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].news | default: "News" }}</h3>
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].latest_problems | default: "Latest Problems" }}</h3>
+<ul>
+  {% for publication in site.data.publications limit:5 %}
+    <li>
+      ({{ publication.year }}) {{ publication.authors }} - {{ publication.title }}
+    </li>
+  {% endfor %}
+</ul>
+<a href="/publications/">All Publications</a>
 
-<!-- {% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+<h3 class="archive__subtitle">Tags</h3>
+{% assign items_max = 0 %}
+{% for item in site.tags %}
+  {% if item[1].size > items_max %}
+    {% assign items_max = item[1].size %}
+  {% endif %}
+{% endfor %}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
-</div> -->
-
-{% include paginator.html %}
+<ul class="taxonomy__index">
+  {% for i in (1..items_max) reversed %}
+    {% for item in site.tags %}
+      {% if item[1].size == i %}
+        <li>
+          <a href="/tags/{{ item[0] | slugify }}">
+            <strong>{{ item[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>

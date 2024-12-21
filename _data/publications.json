@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Title of the Publication",
+    "authors": "Author Name",
+    "year": 2023,
+    "journal": "Journal Name",
+    "downloadLink": "#",
+    "doiLink": "https://doi.org/10.1234/example2"
+  },
+  {
+    "title": "Another Publication Title",
+    "authors": "Author Name",
+    "year": 2023,
+    "journal": "Conference Name",
+    "downloadLink": "#",
+    "doiLink": "https://doi.org/10.1234/example2"
+  },
+  {
+    "title": "Yet Another Publication Title",
+    "authors": "Author Name",
+    "year": 2022,
+    "journal": "Journal Name",
+    "downloadLink": "#",
+    "doiLink": "https://doi.org/10.1234/example3"
+  },
+  {
+    "title": "Interesting Research Paper",
+    "authors": "Author Name",
+    "year": 2022,
+    "journal": "Conference Name",
+    "downloadLink": "#",
+    "doiLink": "https://doi.org/10.1234/example3"
+  },
+  {
+    "title": "Research Paper Title",
+    "authors": "Author Name",
+    "year": 2021,
+    "journal": "Journal Name",
+    "downloadLink": "#",
+    "doiLink": "https://doi.org/10.1234/example3"
+  },
+  {
+    "title": "Another Interesting Paper",
+    "authors": "Author Name",
+    "year": 2021,
+    "journal": "Conference Name",
+    "downloadLink": "#",
+    "doiLink": "https://doi.org/10.1234/example3"
+  }
+]
