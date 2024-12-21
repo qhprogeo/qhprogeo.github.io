@@ -1,0 +1,40 @@
+---
+layout: single
+---
+
+<h2>Publications</h2>
+{% assign publications = site.data.publications | sort: 'year' | reverse %}
+{% assign grouped = publications | group_by: 'year' %}
+
+{% for year in grouped %}
+  <h3>{{ year.name }}</h3>
+  <ul>
+    {% for publication in year.items %}
+    <li>
+      <p>
+        {{ publication.authors }}, <strong>{{ publication.title }}</strong> <br>
+        <em>{{ publication.journal }}</em>
+        {% if publication.downloadLink %} <a href="{{ publication.downloadLink }}">Download</a>{% endif %}
+        {% if publication.doiLink %} <a href="{{ publication.doiLink }}">DOI</a>{% endif %}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<hr>
+
+<h2>Books</h2>
+<div style="display: flex; flex-wrap: wrap;">
+  {% assign books = site.data.books | sort: 'year' | reverse %}
+  {% for book in books %}
+    <div style="flex: 1 1 30%; margin: 1em;">
+      <p>
+        <b>{{ book.title }}</b>
+        <br>
+        <em>{{ book.publisher }}</em>, {{ book.year }} <br>
+        <img src="{{ book.coverUrl }}" alt="Cover Image" style="max-width: 50%;">
+      </p>
+    </div>
+  {% endfor %}
+</div>
