@@ -428,6 +428,15 @@ where $AB = a$, $BC = b$, $CD = c$, $DA = d$, and $k = \left| \frac{a^2 - c^2}{b
   th {
     text-align: left;
   }
+  td img {
+    max-width: 80%;
+    max-height: 400px;
+    border: 1px solid transparent;
+    &:hover {
+      cursor: pointer;
+      border: 1px dashed #ddd;
+    }
+  }
 </style>
 
 <table style="overflow-x: initial;">
@@ -492,6 +501,60 @@ where $AB = a$, $BC = b$, $CD = c$, $DA = d$, and $k = \left| \frac{a^2 - c^2}{b
     </tr>
   
 </table>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.problem-block img');
+    images.forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = '1000';
+
+        const wrapper = document.createElement('div');
+        wrapper.style.backgroundColor = 'white';
+        // wrapper.style.padding = '10px';
+        wrapper.style.borderRadius = '5px';
+        wrapper.style.display = 'inline-block';
+        wrapper.style.maxWidth = '90%';
+        wrapper.style.maxHeight = '90%';
+        wrapper.style.boxSizing ='border-box';
+        // wrapper.style.overflow ='auto';
+
+        const modalImg = document.createElement('img');
+        modalImg.src = img.src;
+        modalImg.style.maxWidth = '90vw';
+        modalImg.style.maxHeight = '90vh';
+        modalImg.style.width = 'auto';
+        modalImg.style.height = 'auto';
+
+        wrapper.appendChild(modalImg);
+        modal.appendChild(wrapper);
+        document.body.appendChild(modal);    modal.addEventListener('click', function(event) {
+          if (event.target === modal) {
+            document.body.removeChild(modal);
+          }
+        });
+
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape') {
+            if (document.body.contains(modal)) {
+              document.body.removeChild(modal);
+            }
+          }
+        });
+      });
+    });
+  });
+</script>
 <!--
   
     <div class="problem-block">
