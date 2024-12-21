@@ -21,7 +21,7 @@ layout: archive
 <ul>
   {% for publication in site.data.publications limit:5 %}
     <li>
-      ({{ publication.year }}) {{ publication.authors }} - {{ publication.title }}
+      ({{ publication.year }}) {{ publication.authors }}, <b>{{ publication.title }}</b> <br> <i>{{ publication.journal }}</i> {% if publication.downloadLink %} &nbsp;&nbsp;<a href="{{ publication.downloadLink }}">Download</a>]{% endif %} {% if publication.doiLink %} &nbsp;&nbsp;<a href="{{ publication.doiLink }}">DOI</a>{% endif %}
     </li>
   {% endfor %}
 </ul>
